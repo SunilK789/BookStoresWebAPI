@@ -19,6 +19,7 @@ namespace BookStoresWebAPI.Models
         public string State { get; set; }
         public string Zip { get; set; }
         public string EmailAddress { get; set; }
+        public int? Age { get; set; }
 
         public virtual ICollection<BookAuthor> BookAuthors { get; set; }
     }

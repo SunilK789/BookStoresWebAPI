@@ -47,6 +47,8 @@ namespace BookStoresWebAPI.Models
                     .HasMaxLength(40)
                     .IsUnicode(false);
 
+                entity.Property(e => e.Age).HasColumnName("age");
+
                 entity.Property(e => e.City)
                     .HasColumnName("city")
                     .HasMaxLength(20)
@@ -182,7 +184,7 @@ namespace BookStoresWebAPI.Models
             modelBuilder.Entity<Publisher>(entity =>
             {
                 entity.HasKey(e => e.PubId)
-                    .HasName("PK__Publishe__2515F222E1E265EE");
+                    .HasName("PK__Publishe__2515F222F1014B65");
 
                 entity.ToTable("Publisher");
 
